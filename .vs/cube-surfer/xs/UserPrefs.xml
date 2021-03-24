@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{093638E2-341D-D23D-2783-B661E3C2897D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NewAssets/UIController.cs">
+    <Files>
+      <File FileName="Assets/NewAssets/SwipeController.cs" Line="7" Column="37" />
+      <File FileName="Assets/NewAssets/Constants.cs" />
+      <File FileName="Assets/NewAssets/CubeBehaviour.cs" Line="93" Column="65" />
+      <File FileName="Assets/NewAssets/GameController.cs" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="15" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="28b7bb08-4dd5-4e6a-8f66-11f542466d7c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
