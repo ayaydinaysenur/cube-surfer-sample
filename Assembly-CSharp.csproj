@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NewAssets\Constants.cs" />
-    <Compile Include="Assets\NewAssets\CubeBehaviour.cs" />
-    <Compile Include="Assets\NewAssets\GameController.cs" />
-    <Compile Include="Assets\NewAssets\SwipeController.cs" />
-    <Compile Include="Assets\NewAssets\TrailMove.cs" />
-    <Compile Include="Assets\NewAssets\UIController.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\CubeBehaviour.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\SwipeController.cs" />
+    <Compile Include="Assets\Scripts\TrailMove.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
     <None Include="Assets\Materials\CellShader\ToonRamp.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/aysenurayaydin/Myrepos/cube-surfer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

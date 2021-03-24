@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{093638E2-341D-D23D-2783-B661E3C2897D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NewAssets/UIController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CubeBehaviour.cs">
     <Files>
-      <File FileName="Assets/NewAssets/SwipeController.cs" Line="7" Column="37" />
-      <File FileName="Assets/NewAssets/Constants.cs" />
-      <File FileName="Assets/NewAssets/CubeBehaviour.cs" Line="93" Column="65" />
-      <File FileName="Assets/NewAssets/GameController.cs" />
-      <File FileName="Assets/Scripts/UIController.cs" Line="15" Column="11" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="87" Column="38" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="61" Column="17" />
+      <File FileName="Assets/Scripts/CubeBehaviour.cs" Line="55" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

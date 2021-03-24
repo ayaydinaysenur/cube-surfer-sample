@@ -11,9 +11,10 @@ public class GameController : MonoBehaviour
     private Vector3 playerStartPos;
     public const int gameSpeed = 20;
     public static Action OnGameStart;
-    private int coinCount;
+    private int score;
     [SerializeField]
     private UIController uiController;
+    private bool isGameStarted;
     // Start is called before the first frame update
     public static GameController Instance
     {
@@ -47,7 +48,10 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        CalculateCoveredRoadRatio();
+        if (isGameStarted)
+        {
+            CalculateCoveredRoadRatio();
+        }
     }
 
     public void TriggerPlayerAnimation(string triggerName)
@@ -55,10 +59,10 @@ public class GameController : MonoBehaviour
         player.GetComponent<Animator>().SetTrigger(triggerName);
     }
 
-    public void IncreaseCoinCount()
+    public void IncreaseScore()
     {
-        coinCount++;
-        uiController.UpdateScoreText(coinCount);
+        score++;
+        uiController.UpdateScoreText(score);
     }
 
     public void GameOverFunction(bool isVictory)
@@ -71,14 +75,15 @@ public class GameController : MonoBehaviour
         {
             TriggerPlayerAnimation(Constants.TRIGGER_PLAYER_ANIMATION_FALL);
         }
-        uiController.OpenReplayButton();
+        isGameStarted = false;
+        //uiController.OpenReplayButton();
     }
 
     public void CalculateCoveredRoadRatio()
     {
         if (player!=null)
         {
-            float ratio = Vector3.Distance(player.transform.position, playerStartPos) / roadLength;
+            float ratio = (float) Vector3.Distance(player.transform.position, playerStartPos) / roadLength;
             uiController.UpdateSlider(ratio);
         }
     }   
@@ -92,5 +97,7 @@ public class GameController : MonoBehaviour
             playerStartPos = player.transform.position;
         }
         roadLength = Vector3.Distance(finishPoint.position, player.transform.position);
+        uiController.UpdateSlider(0);
+        isGameStarted = true;
     }
 }

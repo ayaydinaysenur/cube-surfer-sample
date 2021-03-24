@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class UIController : MonoBehaviour
 {
@@ -31,8 +32,15 @@ public class UIController : MonoBehaviour
     public void ReplayButtonFunction()
     {
         loadingPanel.gameObject.SetActive(true);
+        StartCoroutine(SceneSwitch());
+    }
+
+    IEnumerator SceneSwitch()
+    {
         SceneManager.LoadScene(0, LoadSceneMode.Additive);
-        SceneManager.UnloadScene(lastScene);
+        yield return null;
+        SceneManager.UnloadSceneAsync(lastScene);
+        lastScene = SceneManager.GetActiveScene();
     }
 
     public void UpdateScoreText(int score)

@@ -103,6 +103,7 @@ public class CubeBehaviour : MonoBehaviour
         CubeBehaviour cubeBehaviour = cubeTransform.GetComponent<CubeBehaviour>();
         cubeBehaviour.enabled = true;
         cubeBehaviour.PrepareForMovement();
+        GameController.Instance.IncreaseScore();
     }
 
     public void PrepareForMovement()
